@@ -1,0 +1,17 @@
+S->id=E;
+S->if(C){S}else{S}
+S->while(C){S}
+E->TE'
+E'->+TE'
+E'->ε
+T->FT'
+T'->*FT'
+T'->ε
+F->(E)
+F->num
+F->id
+C->DC'
+C'->||DC'
+C'->ε
+D->(C)
+D->id==num
